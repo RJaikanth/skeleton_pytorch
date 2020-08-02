@@ -1,0 +1,130 @@
+================================
+| Image Classification Models  | 
+================================
++---------------------+--------------+
+|        Model        |     Status   |
++---------------------+--------------+
+| VGG16               |    Done      |
+| VGG19               |    Done      |
+| ResNet18            |    Done      |
+| ResNet34            |    Done      |
+| ResNet50            |    Done      |
+| ResNet101           |    Done      |
+| ResNet152           |    Done      |
+| ResNet50V2          |    ----      |
+| ResNet101V2         |    ----      |
+| ResNet152V2         |    ----      |
+| InceptionV3         |    ----      |
+| InceptionResNetV2   |    ----      |
+| MobileNet           |    ----      |
+| MobileNetV2         |    ----      |
+| DenseNet121         |    ----      |
+| DenseNet169         |    ----      |
+| DenseNet201         |    ----      |
+| NASNetMobile        |    ----      |
+| NASNetLarge         |    ----      |
+| EfficientNetB7      |    ----      |
+| Xception            |    ----      |   
+| AlexNet             |    Done      |
++---------------------+--------------+
+
+
+================
+| Dictionaries |
+================
++----------------+--------------------------+-------------+
+|  Dictionary    |        Status            |   Status    |
++----------------+--------------------------+-------------+
+| MODEL_DICT     | Contains Models          |    Semi     |  
+| LOSS_DICT      | Contains Loss functions  |    Semi     |  
+| OPTIMIZER_DICT | Contains Optimizers      |    ----     |  
++----------------+--------------------------+-------------+
+
+
+=====================================
+| Create web-app hosting all models | 
+=====================================
+(In order of priority)
+- Must Have - 
+    * Model in ONNX format
+    * Predcition in backend
+    * Dockerize
+    * Feedback (if predcition is right)
+    * Set up batch training after 'x' time
+    * Multiple requests
+- Should Have - 
+    * Material theme
+
+
+===========================
+| Object Detection Models | 
+===========================
++---------------------+--------------+
+|        Model        |     Status   |
++---------------------+--------------+
+| R-CNN               |    ----      |   
+| Fast R-CNN          |    ----      |
+| Faster R-CNN        |    ----      |
+| Mask R-CNN          |    ----      |
+| YOLOv3              |    ----      |
+| YOLOv4              |    ----      |
+| YOLOv5              |    ----      |
+| RetinaNet           |    ----      |
+| SSD                 |    ----      |
++---------------------+--------------+
+
+
+================
+| Dictionaries | 
+================
++----------------+--------------------------+-------------+
+|  Dictionary    |        Status            |   Status    |
++----------------+--------------------------+-------------+
+| MODEL_DICT     | Contains Models          |    ----     |  
+| LOSS_DICT      | Contains Loss functions  |    ----     |  
+| OPTIMIZER_DICT | Contains Optimizers      |    ----     |  
++----------------+--------------------------+-------------+
+
+
+=====================================
+| Create web-app hosting all models | 
+=====================================
+(In order of priority)
+- Must Have - 
+    * Model in ONNX format
+    * Predcition in backend
+    * Dockerize
+    * Feedback (if predcition is right)
+    * Set up batch training after 'x' time
+    * Multiple requests
+- Should Have - 
+    * Material theme
+
+
+========
+| GANS |
+========
+No Idea
+
+
+=================
+| Project Ideas |
+=================
++--------------------------+--------------+
+|        Model             |     Status   |
++--------------------------+--------------+
+| Mask Detection           |    ----      |   
+| Edge Detection           |    ----      |
+| Pose Detection           |    ----      |
+| Face Detection           |    ----      |
+| Hand Gesture Detection   |    ----      |
+| Object Tracking          |    ----      | 
+| Facial Emotion Detection |    ----      | 
+| Object Segmentation      |    ----      | 
+| Face Detection           |    ----      | 
+| Photo to sketch          |    ----      |   
+| Sketch to photo          |    ----      |
+| Filters (Many)           |    ----      |
+| DeepFake (Video + Image) |    ----      |
++--------------------------+--------------+
+
