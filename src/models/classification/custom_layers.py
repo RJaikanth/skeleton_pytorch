@@ -99,3 +99,33 @@ class BottleNeck(nn.Module):
         out = self.relu(out)
 
         return out
+
+
+class Fire(nn.Module):
+    """ Fire Layer for SqueezeNet """
+
+    def __init__(self, in_channels, squeeze_channels,
+                 expand1x1_channels, expand3x3_channels):
+        super(Fire, self).__init__()
+
+        self.in_channels = in_channels
+
+        self.squeeze = nn.Conv2d(in_channels, squeeze_channels, kernel_size=1)
+        self.squeeze_activation = nn.ReLU(inplace=True)
+
+        self.expand1x1 = nn.Conv2d(
+            squeeze_channels, expand1x1_channels, kernel_size=1)
+        self.expand1x1_activation = nn.ReLU(inplace=True)
+
+        self.expand3x3 = nn.Conv2d(
+            squeeze_channels, expand3x3_channels, kernel_size=3, padding=1)
+        self.expand3x3_activation = nn.ReLU(inplace=True)
+
+    def forward(self, x):
+        # print(x.shape)
+        out = self.squeeze_activation(self.squeeze(x))
+        # print(out.shape)
+        return torch.cat([
+            self.expand1x1_activation(self.expand1x1(out)),
+            self.expand3x3_activation(self.expand3x3(out))
+        ], 1)

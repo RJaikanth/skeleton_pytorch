@@ -20,5 +20,7 @@ CLS_DICT = {
     "resnext101_32x8d": ResNeXt101_32x8d,
     "wideresnet50_2": WideResNet50_2,
     "wideresnet101_2": WideResNet101_2,
-    "wideresnet152_2": WideResNet152_2
+    "wideresnet152_2": WideResNet152_2,
+    "squeezenet1": SqueezeNet1_0,
+    "squeezenet1_1": SqueezeNet1_1,
 }
