@@ -98,44 +98,48 @@ class ResNet(nn.Module):
         return self._forward_impl(x)
 
 
-def ResNet18(num_classes):
+def ResNet18(num_classes=1000):
     return ResNet(block=BasicBlock, layers=[2, 2, 2, 2], num_classes=num_classes)
 
 
-def ResNet34(num_classes):
+def ResNet34(num_classes=1000):
     return ResNet(block=BasicBlock, layers=[3, 4, 6, 3], num_classes=num_classes)
 
 
-def ResNet50(num_classes):
+def ResNet50(num_classes=1000):
     return ResNet(block=BottleNeck, layers=[2, 2, 2, 2], num_classes=num_classes)
 
 
-def ResNet101(num_classes):
+def ResNet101(num_classes=1000):
     return ResNet(block=BottleNeck, layers=[3, 4, 23, 3], num_classes=num_classes)
 
 
-def ResNet152(num_classes):
+def ResNet152(num_classes=1000):
     return ResNet(block=BottleNeck, layers=[3, 8, 86, 3], num_classes=num_classes)
 
 
-def ResNet50_32x4d(num_classes):
+def ResNeXt50_32x4d(num_classes=1000):
     return ResNet(block=BottleNeck, layers=[3, 4, 6, 3], groups=32, width_per_group=4, num_classes=num_classes)
 
 
-def ResNet50_32x8d(num_classes):
+def ResNeXt50_32x8d(num_classes=1000):
     return ResNet(block=BottleNeck, layers=[3, 4, 6, 3], groups=32, width_per_group=8, num_classes=num_classes)
 
 
-def ResNet101_32x8d(num_classes):
+def ResNeXt101_32x8d(num_classes=1000):
     return ResNet(block=BottleNeck, layers=[3, 4, 23, 3], groups=32, width_per_group=8, num_classes=num_classes)
 
 
-def WideResNet50_2(num_classes):
+def WideResNet50_2(num_classes=1000):
     return ResNet(BottleNeck, layers=[3, 4, 6, 3], width_per_group=64*2)
 
 
-def WideResNet101_2(num_classes):
+def WideResNet101_2(num_classes=1000):
     return ResNet(BottleNeck, layers=[3, 4, 23, 3], width_per_group=64*2)
+
+
+def WideResNet152_2(num_classes=1000):
+    return ResNet(BottleNeck, layers=[3, 8, 86, 3], width_per_group=64*2)
 
 
 if __name__ == "__main__":

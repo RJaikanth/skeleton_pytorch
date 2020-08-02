@@ -11,9 +11,11 @@
 | ResNet50            |    Done      |
 | ResNet101           |    Done      |
 | ResNet152           |    Done      |
-| ResNet50V2          |    ----      |
-| ResNet101V2         |    ----      |
-| ResNet152V2         |    ----      |
+| ResNeXt50_32x4d     |    Done      |
+| ResNeXt50_32x8d     |    Done      |
+| ResNeXt101_32x8d    |    Done      |
+| WideResNet50_2      |    Done      |
+| WideResNet101_2     |    Done      |
 | InceptionV3         |    ----      |
 | InceptionResNetV2   |    ----      |
 | MobileNet           |    ----      |
