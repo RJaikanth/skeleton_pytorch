@@ -143,6 +143,7 @@ data/seg_pred/
 data/seg_test/
 data/seg_train/
 logs/tensorboard/running/
+logs/tensorboard/models/
 src/datasets/intel_images.py
 visualize_models.py
 weights/trained/alexnet/

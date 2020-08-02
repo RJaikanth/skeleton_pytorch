@@ -16,6 +16,8 @@
 | ResNeXt101_32x8d    |    Done      |
 | WideResNet50_2      |    Done      |
 | WideResNet101_2     |    Done      |
+| SqueezeNet          |    Done      |
+| SqueezeNet1_1       |    Done      |   
 | InceptionV3         |    ----      |
 | InceptionResNetV2   |    ----      |
 | MobileNet           |    ----      |
