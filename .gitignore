@@ -136,3 +136,13 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+config/alexnet/
+data/csv/
+data/seg_pred/
+data/seg_test/
+data/seg_train/
+logs/tensorboard/running/
+src/datasets/intel_images.py
+visualize_models.py
+weights/trained/alexnet/
