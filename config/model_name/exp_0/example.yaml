@@ -1,0 +1,43 @@
+experiment:
+    exp: 0
+    run: 0
+    num_epochs: 20
+    check_log: True # set False when debugging
+    seed: 420
+    train_batch_size: 32
+    valid_batch_size: 16
+
+paths:
+    train_csv: "data/csv/train.csv"
+    valid_csv: "data/csv/valid.csv"
+    log_path: "logs/running/"
+    model_path: "weights/trained/"
+    tb_log_path: "logs/tensorboard/running/"
+
+model:
+    type: "alexnet"
+    checkpoint: null
+    start_epoch: 0
+    params:
+        init_weights: True
+        num_classes: 6
+
+loss: "cross_entropy"
+
+optimizer:
+    type: "adam"
+    params:
+        lr: 0.001
+        weight_decay: 0
+
+early_stopping:
+    patience: 7
+    mode: "min" # min for loss / max for accuracy
+
+schedulers:
+    reduce_lr:
+        patience: 5
+        factor: 0.1
+    # reduce_lr1:
+    #     patience: 5
+    #     factor: 0.1
