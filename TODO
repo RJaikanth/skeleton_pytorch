@@ -25,6 +25,7 @@
 | DenseNet121         |    ----      |
 | DenseNet169         |    ----      |
 | DenseNet201         |    ----      |
+| DenseNet161         |    ----      |
 | NASNetMobile        |    ----      |
 | NASNetLarge         |    ----      |
 | EfficientNetB7      |    ----      |
